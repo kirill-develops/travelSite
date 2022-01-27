@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 h1,
 h2,
+p,
 .nav a,
 .nav a:visited,
 .nav__title,
@@ -24,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 575;
+    font-weight: 550;
 }
 
 p {  
@@ -33,13 +35,14 @@ p {
 /* nav bar */
 
 .nav {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
     height: 2.5rem;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.93);
+    padding-bottom: 4rem;
 }
 
 .nav a {
@@ -48,21 +51,21 @@ p {
 
 .nav__title {
     padding-left: 7rem;
-    padding-top: 0.9rem;
-    font-size: 1.4rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .nav__list {
     list-style-type: none;
-    padding-right: 6.5rem;
+    padding-right: 7rem;
 }
 
 .nav__list li {
     display: inline-block;
     font-weight: 400;
-    font-size: 1rem;
-    margin: 0 0.5rem;
-    padding: 0.8rem 0;
+    font-size: 1.15rem;
+    margin: 0 0.7rem;
+    padding: 0.55rem 0;
 }
 
 .nav__list a {
@@ -70,11 +73,11 @@ p {
 }
 
 .nav__list-item--active {
-    border-bottom: 3px solid #DB7A4E ;
+    border-bottom: 0.24rem solid #DB7A4E ;
 }
 
-.footer-container__header,
 .nav__list a:hover,
+.footer-container__header,
 footer a:hover {
     color: #DB7A4E;
 }
@@ -82,20 +85,128 @@ footer a:hover {
     z-index: 1;
 }
 
-.nav__spacer {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 3rem;
+/* spacer for nav  */
+.nav + main{
+    padding-top: 4.4rem;
 }
 
+/* hero banner */
+.index-hero {
+    box-sizing: border-box;
+    background-image: url(/assets/Images/hero.png);
+    background-color: #FEFAF5;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    background-size: 33.66%;
+    width: 100%;
+    padding: 8rem 0 28rem;
+    height: 60vh;
+}
+
+.index-hero__container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(254, 250, 245, 0.7);
+    box-sizing: content-box;
+    width: 43.75rem;
+    height: 19rem;
+    padding: 0 2%;
+    margin-left: calc(7rem - 2%);
+    border-radius: 1rem;
+}
+
+.index-hero__title {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.index-hero__detail {
+    text-align: left;
+    font-size: 1.18rem;
+    font-weight: 100;
+    
+}
+
+.index-hero__button {
+    display: inline-block;
+    min-width: 13.5rem;
+    width: 25%;
+    padding: 0.9rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    background-color: #DB7A4E;
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 100;
+    
+}
+/* recommendations */
+.recommendations {
+    padding: 4rem 7rem 6rem;
+}
+
+.recommendations > h2 {
+    margin-bottom: 1.8rem;
+}
+
+.recommendations__card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 100; */
+    padding: 1rem 12.5%;
+
+}
+.recommendations__card {
+    z-index: -1;
+    display: inline-block;
+    position: relative;
+    min-width: 21rem;
+    min-height: 33rem;
+    border: 0.1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.313rem;
+color: grey;
+}
+.recommendations__card:hover{
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.recommendations__card-title {
+    position: absolute;
+    bottom: 1.3rem;
+    right: 1.5rem;
+    color: white;
+}
+
+.recommendations__card--hawaii {
+    background-image: url(/assets/Images/hawaii.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.recommendations__card--iceland {
+    background-image: url(/assets/Images/iceland.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.recommendations__card--greece {
+    background-image: url(/assets/Images/greece.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+    
 /* footer */
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12rem;
+    padding: 0 18.5rem;
     height: fit-content;
     background-color: #FEFAF5;
     padding-bottom: 3.5rem;
@@ -104,18 +215,19 @@ footer a:hover {
 .footer h2 {
     margin-top: 4rem;
     margin-bottom: 3rem;
+    font-size: 1.8rem ;
 }
 
 .footer-container__header {
     margin-bottom: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 100;
 }
 
-
 .footer-container__info {
     white-space: nowrap;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 100;
 }
 
 a.footer-container__info {
@@ -126,10 +238,7 @@ a.footer-container__info {
 .footer-container__bottom {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-container__bottom > div {
-    margin-right: 2.4rem;
+    width: 33rem;
 }
 
 /* footer social specific */
@@ -137,11 +246,11 @@ a.footer-container__info {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    width: 10rem;
 }
 
 .footer-container__logo {
-    height: 2rem;
+    height: 1.9rem;
     margin-top: 0.8rem;
-    margin-right: 2.5rem;
 }
 
