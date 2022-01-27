@@ -26,12 +26,6 @@ footer-container__header
 footer-container__info
 footer-container__logo
 
-nav
-nav__title
-nav__list
-nav__list-item
-nav__list-item--active
-
 destination-main
 destination-main__title
 destination-main__container
@@ -39,10 +33,3 @@ destination-card
 destination-card__title
 destination-card__list
 destination-card__list-item
-
-footer
-footer-container
-footer-container__title
-footer-container__header
-footer-container__info
-footer-container__logo

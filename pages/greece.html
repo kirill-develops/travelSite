@@ -10,11 +10,11 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="./">
+        <a href="/">
             <h3 class="nav__title">Travel Site</h3>
         </a>
         <ul class="nav__list">
-            <a href="./">
+            <a href="/">
                 <li>
                     Home
                 </li>
@@ -67,57 +67,71 @@
         </div>
     </section>
 
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer-container">
             <h2>
                 Contact
             </h2>
-            <p>
-                EMAIL
-            </p>
-            <a>
-                info@travelsite.com
-            </a>
+            <div>
+                <p class="footer-container__header">
+                    EMAIL
+                </p>
+                <a href="mailto:info@travelsite.com" class="footer-container__info">
+                    info@travelsite.com
+                </a>
+            </div>
         </div>  
 
-        <div>
+        <div class="footer-container">
             <h2>
                 Hours
             </h2>
-            <p>
-                MONDAY - FRIDAY
-            </p>
-            <p>
-                9:00 AM - 5:00 PM
-            </p>
-            <p>
-                SATURDAY
-            </p>
-            <p>
-                10:00 AM - 4:00 PM
-            </p>
-            <p>
-                SUNDAY
-            </p>
-            <p>
-                CLOSED
-            </p>
+            <div class="footer-container__bottom">
+                
+                <div>
+                    <p class="footer-container__header">
+                        MONDAY - FRIDAY
+                    </p>
+                    <p class="footer-container__info">
+                        9:00 AM - 5:00 PM
+                    </p>
+                </div>
+                <div>
+                    <p class="footer-container__header">
+                        SATURDAY
+                    </p>
+                    <p class="footer-container__info">
+                        10:00 AM - 4:00 PM
+                    </p>
+                </div>   
+                <div>
+                    <p class="footer-container__header">
+                        SUNDAY
+                    </p>
+                    <p class="footer-container__info">
+                        Closed
+                    </p>
+                </div>
+            </div>
         </div>  
 
-        <div>
+        <div class="footer-container">
             <h2>
                 Social
             </h2>
-            <a href="" class="">
-                <img src="" class="" alt="">
-            </a>
-            <a href="" class="">
-                <img src="" class="" alt="">
-            </a>
-            <a href="" class="">
-                <img src="" class="" alt="">
-            </a>
+            <div class="footer-container__social">
+                <a href="" class="">
+                    <img src="/assets/Icons/icon-instagram.png" class="footer-container__logo" alt="">
+                </a>
+                <a href="" class="">
+                    <img src="/assets/Icons/icon-facebook.png" class="footer-container__logo" alt="">
+                </a>
+                <a href="" class="">
+                    <img src="/assets/Icons/icon-twitter.png" class="footer-container__logo" alt="">
+                </a>
+            </div>
         </div>  
+
     </footer>
 </body>
 </html>

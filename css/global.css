@@ -13,11 +13,18 @@ h1,
 h2,
 .nav a,
 .nav a:visited,
-.nav__title {
+.nav__title,
+.footer-container__info {
     color: #335576
 }
 
 h2 {
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+
+h3 {
+    font-weight: 575;
 }
 
 p {  
@@ -29,9 +36,9 @@ p {
     /* position: fixed; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
-    height: 3rem;
+    height: 2.5rem;
     background-color: #ffffff;
 }
 
@@ -40,26 +47,39 @@ p {
 }
 
 .nav__title {
-    padding-left: 5rem;
+    padding-left: 7rem;
+    padding-top: 0.9rem;
+    font-size: 1.4rem;
 }
 
 .nav__list {
     list-style-type: none;
-    padding-right: 4rem;
+    padding-right: 6.5rem;
 }
 
 .nav__list li {
     display: inline-block;
-    font-weight: 700;
-    margin: 0 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.8rem 0;
+}
+
+.nav__list a {
+    /* color: black; */
 }
 
 .nav__list-item--active {
-    border-bottom: 2px solid #DB7A4E ;
+    border-bottom: 3px solid #DB7A4E ;
 }
 
-.nav__list a:hover {
+.footer-container__header,
+.nav__list a:hover,
+footer a:hover {
     color: #DB7A4E;
+}
+.nav__list a:hover {
+    z-index: 1;
 }
 
 .nav__spacer {
@@ -68,3 +88,60 @@ p {
     width: 100%;
     height: 3rem;
 }
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12rem;
+    height: fit-content;
+    background-color: #FEFAF5;
+    padding-bottom: 3.5rem;
+}
+
+.footer h2 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-container__header {
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+
+.footer-container__info {
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+a.footer-container__info {
+    text-decoration: none ;
+}
+
+/* footer hours specific */
+.footer-container__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container__bottom > div {
+    margin-right: 2.4rem;
+}
+
+/* footer social specific */
+.footer-container__social {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-container__logo {
+    height: 2rem;
+    margin-top: 0.8rem;
+    margin-right: 2.5rem;
+}
+
