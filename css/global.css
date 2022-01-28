@@ -21,7 +21,7 @@ p,
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.35rem;
     font-weight: 550;
 }
 
@@ -33,27 +33,18 @@ p {
 }
 
 /* nav bar */
-/* .nav--blur {
-    z-index: 0;
-    position: fixed;
-    width: 100%;
-    height: 2.5rem;
-    padding-bottom: 4.4rem;
-    filter: blur(8px);
-    
-} */
-
 .nav {
     z-index: 1;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
     width: 100%;
-    height: 2.5rem;
-    background-color: rgba(255, 255, 255, 0.93);
-    padding-bottom: 4.4rem;
-    
+    /* height: 2.5rem; */
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: .5rem;
+    backdrop-filter: blur(7px);
 }
 
 .nav a {
@@ -61,23 +52,25 @@ p {
 }
 
 .nav__title {
-    padding-left: 7rem;
+    padding-left: 5.25rem;
     padding-top: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 550;
+    white-space: nowrap;
 }
 
 .nav__list {
     list-style-type: none;
-    padding-right: 7rem;
+    padding-right: 5.25rem;
+    white-space: nowrap;
 }
 
 .nav__list li {
     display: inline-block;
     font-weight: 400;
-    font-size: 1.15rem;
-    margin: 0 0.7rem;
-    padding: 0.55rem 0;
+    font-size: 0.9rem;
+    margin: 0 0.4rem;
+    padding: 0.2rem 0;
 }
 
 .nav__list-item--active {
@@ -89,13 +82,30 @@ p {
 .footer a:hover {
     color: #DB7A4E;
 }
+
+.nav a,
+.footer a {
+    transition-duration: 0.5s;
+}
+
 .nav__list a:hover {
     z-index: 1;
 }
 
+.test{
+}
+
+@keyframes swing-out-top-bck{0%{transform:rotateX(0deg);transform-origin:top;opacity:1}100%{transform:rotateX(-100deg);transform-origin:top;opacity:0}}
+/* #nav__list--click {
+    display: none;
+} */
+#nav__list--click:active li {
+    animation:swing-out-top-bck .45s cubic-bezier(.6,-.28,.735,.045) both
+}
+
 /* spacer for nav  */
 .nav + main{
-    padding-top: 4.5rem;
+    padding-top: 3rem;
 }
 
 /* hero banner */
@@ -104,12 +114,12 @@ p {
     background-image: url(/assets/Images/hero.png);
     background-color: #FEFAF5;
     background-repeat: no-repeat;
-    background-position-x: 87.75%;
+    background-position-x: 89%;
     background-position-y: center;
-    background-size: 32%;
+    background-size: 33%;
     width: 100%;
-    padding: 8rem 0 30rem;
-    height: 60vh;
+    padding: 4rem 0 15rem;
+    height: 30rem;
 }
 
 .index-hero__container {
@@ -118,82 +128,77 @@ p {
     justify-content: space-between;
     background-color: rgba(254, 250, 245, 0.7);
     box-sizing: content-box;
-    width: 43.75rem;
-    height: 19rem;
-    padding: 0 2%;
-    margin-left: calc(7rem - 2%);
+    width: 33rem;
+    height: 15rem;
+    padding: 2% 2%;
+    margin-top: 3rem;
+    margin-left: calc(5.25rem - 2%);
     border-radius: 1rem;
 }
 
 .index-hero__title {
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: left;
 }
 
 .index-hero__detail {
     text-align: left;
-    font-size: 1.18rem;
+    font-size: 0.88rem;
     font-weight: 100;
     
 }
 
 .index-hero__button {
     display: inline-block;
-    min-width: 13.5rem;
+    min-width: 10rem;
     width: 25%;
-    padding: 0.9rem;
+    padding: 0.6rem;
     border-radius: 1.5rem;
     text-align: center;
     background-color: #DB7A4E;
     color: white;
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 0.85rem;
     font-weight: 100;
     
 }
 /* recommendations */
 .recommendations {
-    padding: 4rem 7rem 6rem;
+    padding: 3rem 5.25rem 4.25rem;
 }
 
 .recommendations > h2 {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .recommendations__card-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* width: 100; */
-    padding: 1rem 12.5%;
+    padding: 1rem 12.3%;
+}
 
-}
 .recommendations__card {
     display: inline-block;
     position: relative;
-    min-width: 21rem;
-    min-height: 33rem;
+    /* min-width: 18rem; */
+    width: 15.90rem;
+    height: 23rem;
     border: 0.1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0.313rem;
 }
-.recommendations__card {
-    display: inline-block;
-    position: relative;
-    min-width: 21rem;
-    height: 33rem;
-    border: 0.1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 0.313rem;
-}
+
 
 .recommendations__card--over{
     display: inline-block;
-    min-width: 21rem;
-    height: 32.8rem;
+    width: 100%;
+    height: 100%;
     border-radius: 0.313rem;
+    transition-duration: 0.5s;
 }
-    .recommendations__card:hover > .recommendations__card--over{
+
+.recommendations__card:hover > .recommendations__card--over{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -208,52 +213,52 @@ p {
     bottom: 1.3rem;
     right: 1.5rem;
     color: white;
+    transition-duration: 0.3s;
 }
 
 .recommendations__card--hawaii {
     background-image: url(/assets/Images/hawaii.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: stretch;
 }
 .recommendations__card--iceland {
     background-image: url(/assets/Images/iceland.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: stretch;
 }
 
 .recommendations__card--greece {
     background-image: url(/assets/Images/greece.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: stretch;
 }
     
 /* footer */
-
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 18.5rem;
+    padding: 0 13.8rem;
     height: fit-content;
     background-color: #FEFAF5;
-    padding-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .footer h2 {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-    font-size: 1.8rem ;
+    margin-top: 2.7rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.35rem ;
 }
 
 .footer-container__header {
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.57rem;
     font-weight: 100;
 }
 
 .footer-container__info {
     white-space: nowrap;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 100;
 }
 
@@ -265,7 +270,7 @@ a.footer-container__info {
 .footer-container__bottom {
     display: flex;
     justify-content: space-between;
-    width: 33rem;
+    width: 23.75rem;
 }
 
 /* footer social specific */
@@ -273,11 +278,10 @@ a.footer-container__info {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 10rem;
+    width: 8rem;
 }
 
 .footer-container__logo {
-    height: 1.9rem;
+    height: 1.43rem;
     margin-top: 0.8rem;
 }
-

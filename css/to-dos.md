@@ -42,9 +42,9 @@ Color: Black, with an opacity of 20% -->
 
 Destination Pages:
 
-They must have a title with the destination name
-The provided image asset for the destination must take up the full width/height of the background for the page.
-They must have 3 Days of Itinerary activities including:
+<!-- They must have a title with the destination name -->
+<!-- The provided image asset for the destination must take up the full width/height of the background for the page. -->
+<!-- They must have 3 Days of Itinerary activities including: -->
 <!-- A title for the day of the week -->
 <!-- 4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling) -->
 <!-- Activities must have a background of #FEFAF5 -->
