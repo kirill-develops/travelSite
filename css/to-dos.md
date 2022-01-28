@@ -45,11 +45,11 @@ Destination Pages:
 They must have a title with the destination name
 The provided image asset for the destination must take up the full width/height of the background for the page.
 They must have 3 Days of Itinerary activities including:
-A title for the day of the week
-4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling)
-Activities must have a background of #FEFAF5
-Implementation Requirements
-You must use semantic tags where appropriate (e.g. header, footer, nav, etc)
+<!-- A title for the day of the week -->
+<!-- 4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling) -->
+<!-- Activities must have a background of #FEFAF5 -->
+<!-- Implementation Requirements
+You must use semantic tags where appropriate (e.g. header, footer, nav, etc) -->
 
 All CSS must be placed in a separate stylesheet and connected to the HTML through the link tag.
 

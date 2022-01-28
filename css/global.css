@@ -25,7 +25,7 @@ h2 {
     font-weight: 550;
 }
 
-h3 {
+h3{
     font-weight: 550;
 }
 
@@ -33,8 +33,18 @@ p {
 }
 
 /* nav bar */
+/* .nav--blur {
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    height: 2.5rem;
+    padding-bottom: 4.4rem;
+    filter: blur(8px);
+    
+} */
 
 .nav {
+    z-index: 1;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -42,7 +52,8 @@ p {
     width: 100%;
     height: 2.5rem;
     background-color: rgba(255, 255, 255, 0.93);
-    padding-bottom: 4rem;
+    padding-bottom: 4.4rem;
+    
 }
 
 .nav a {
@@ -51,8 +62,9 @@ p {
 
 .nav__title {
     padding-left: 7rem;
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     font-size: 1.5rem;
+    font-weight: 550;
 }
 
 .nav__list {
@@ -68,17 +80,13 @@ p {
     padding: 0.55rem 0;
 }
 
-.nav__list a {
-    /* color: black; */
-}
-
 .nav__list-item--active {
     border-bottom: 0.24rem solid #DB7A4E ;
 }
 
-.nav__list a:hover,
+.nav a:hover,
 .footer-container__header,
-footer a:hover {
+.footer a:hover {
     color: #DB7A4E;
 }
 .nav__list a:hover {
@@ -87,7 +95,7 @@ footer a:hover {
 
 /* spacer for nav  */
 .nav + main{
-    padding-top: 4.4rem;
+    padding-top: 4.5rem;
 }
 
 /* hero banner */
@@ -96,11 +104,11 @@ footer a:hover {
     background-image: url(/assets/Images/hero.png);
     background-color: #FEFAF5;
     background-repeat: no-repeat;
-    background-position-x: 90%;
+    background-position-x: 87.75%;
     background-position-y: center;
-    background-size: 33.66%;
+    background-size: 32%;
     width: 100%;
-    padding: 8rem 0 28rem;
+    padding: 8rem 0 30rem;
     height: 60vh;
 }
 
@@ -161,7 +169,6 @@ footer a:hover {
 
 }
 .recommendations__card {
-    z-index: -1;
     display: inline-block;
     position: relative;
     min-width: 21rem;
@@ -169,11 +176,31 @@ footer a:hover {
     border: 0.1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0.313rem;
-color: grey;
 }
-.recommendations__card:hover{
+.recommendations__card {
+    display: inline-block;
+    position: relative;
+    min-width: 21rem;
+    height: 33rem;
+    border: 0.1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.313rem;
+}
+
+.recommendations__card--over{
+    display: inline-block;
+    min-width: 21rem;
+    height: 32.8rem;
+    border-radius: 0.313rem;
+}
+    .recommendations__card:hover > .recommendations__card--over{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.recommendations__card:hover > .recommendations__card-title{
+    color: #DB7A4E;
+    opacity: 100%;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .recommendations__card-title {
