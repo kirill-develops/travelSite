@@ -6,7 +6,6 @@
 .get-started--layer {
     background-color: rgba(50,50,50, 0.5);
     height: 45rem;
-
 }
 .get-started__title{
     color: white;
@@ -16,7 +15,6 @@
     padding-bottom: 5rem;
     font-size: 4rem;
 }
-
 .get-started__container {
     display: flex;
     flex-direction: column;
@@ -31,7 +29,6 @@
     border: 2px solid whitesmoke;
     text-align: center;
 }
-
 .get-started__cue {
     color: whitesmoke;
 
