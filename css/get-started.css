@@ -1,0 +1,38 @@
+.get-started {
+    background-image: url(../assets/Images/get-started.jpeg);
+    background-size:cover;
+    height: 45rem;
+}
+.get-started--layer {
+    background-color: rgba(50,50,50, 0.5);
+    height: 45rem;
+
+}
+.get-started__title{
+    color: white;
+    /* text-shadow: -6px 5px 0 #DB7A4E; */
+    padding-left: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.get-started__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 23rem;
+    height: 17rem;
+    margin: auto;
+    padding: 2rem 0 3rem;
+    backdrop-filter: blur(1px) brightness(80%);
+    border-radius: 1.5rem;
+    border: 2px solid whitesmoke;
+    text-align: center;
+}
+
+.get-started__cue {
+    color: whitesmoke;
+
+}

@@ -59,7 +59,7 @@ All CSS must be placed in a separate stylesheet and connected to the HTML throug
 
 <!-- Recommendations Destination Cards: Must use the <a> tag around the cards in order to link to the appropriate page. -->
 
-Itinerary Cards: Must use an unordered list for the itinerary activities
+<!-- Itinerary Cards: Must use an unordered list for the itinerary activities -->
 
 <!-- Reuse as much styling and code as possible (e.g. Destination Cards and Itinerary cards), and build your project around common component code that you can reuse if possible. -->
 
@@ -67,10 +67,10 @@ Itinerary Cards: Must use an unordered list for the itinerary activities
 
 <!-- The layout of your site must use the Box Model, the CSS display property and CSS positioning including Flexbox. For this project, you should not use floats. -->
 
-Diving Deeper
+<!-- Diving Deeper
 If you have completed the requirements above, you may go above and beyond to demonstrate skills you have been learning. However, any further features you add to the project must not conflict with the provided requirements.
 
-Suggestions for Diving Deeper:
+Suggestions for Diving Deeper: -->
 
 Make your site responsive so that it looks good at any dimension.
 Add hover animations to links. For example, when hovering over menu items in the Navigation menu, add an underline to the hovered item. For your destination cards, change border color or add an semi-transparent overlay when hovered.
