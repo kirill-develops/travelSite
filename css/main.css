@@ -1,7 +1,7 @@
 /* hero banner */
 .index-hero {
     box-sizing: border-box;
-    background-image: url(/assets/Images/hero.png);
+    background-image: url(./assets/Images/hero.png);
     background-color: #FEFAF5;
     background-repeat: no-repeat;
     background-position-x: 89%;
@@ -106,18 +106,18 @@
 }
 
 .recommendations__card--hawaii {
-    background-image: url(/assets/Images/hawaii.jpg);
+    background-image: url(./assets/Images/hawaii.jpg);
     background-size: cover;
     background-position: stretch;
 }
 .recommendations__card--iceland {
-    background-image: url(/assets/Images/iceland.jpg);
+    background-image: url(./assets/Images/iceland.jpg);
     background-size: cover;
     background-position: stretch;
 }
 
 .recommendations__card--greece {
-    background-image: url(/assets/Images/greece.jpg);
+    background-image: url(./assets/Images/greece.jpg);
     background-size: cover;
     background-position: stretch;
 }
