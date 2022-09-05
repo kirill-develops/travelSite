@@ -9,11 +9,13 @@
 }
 .get-started__title{
     color: white;
-    /* text-shadow: -6px 5px 0 #DB7A4E; */
     padding-left: 5rem;
     padding-top: 4rem;
     padding-bottom: 5rem;
     font-size: 4rem;
+}
+.get-started__subtitle{
+    color: snow;
 }
 .get-started__container {
     display: flex;
